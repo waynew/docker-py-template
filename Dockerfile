@@ -20,6 +20,8 @@ RUN pip3.4 install -U "setuptools"
 RUN pip3.4 install -U "pip"
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
+COPY dist/mystuff-0.1.0.tar.gz /dist/mystuff-0.1.0.tar.gz
+RUN pip3.4 install /dist/mystuff-0.1.0.tar.gz
 VOLUME ["/logs/"]
 
 ENTRYPOINT ["python3.4"]
