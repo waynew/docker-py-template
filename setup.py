@@ -33,7 +33,6 @@ setup(
     url='https://github.com/waynew/docker-py-template',
     packages=find_packages(),
     cmdclass={'test': PyTest},
-    package_dir={'scheduler': 'scheduler'},
     include_package_data=True,
     install_requires=['flask', 
     ],
